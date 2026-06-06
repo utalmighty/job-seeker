@@ -71,7 +71,7 @@ CompanyName,Workday-URL,Location-Facet-Key,Location-ID-1,Location-ID-2,Location-
 #### Manual Run (Using Defaults)
 
 ```bash
-python script.py
+python src/script.py
 ```
 
 #### Manual Run (Custom Settings)
@@ -81,7 +81,7 @@ export SEARCH_TEXT="Java"
 export CSV_PATH="/path/to/your/sample.csv"
 export DISCORD_WEBHOOK="https://discordapp.com/api/webhooks/..."
 
-python script.py
+python src/script.py
 ```
 
 #### Scheduled Run (Cron)
@@ -95,7 +95,7 @@ crontab -e
 Add a line to run the script at a specific time (example: daily at 11 PM):
 
 ```
-0 23 * * * export SEARCH_TEXT="Java" && export CSV_PATH="/home/utalmighty/job-seeker/sample.csv" && export DISCORD_WEBHOOK="your_webhook_url" && /usr/bin/python3 /home/utalmighty/job-seeker/script.py
+0 23 * * * export SEARCH_TEXT="Java" && export CSV_PATH="/home/utalmighty/job-seeker/resources/sample.csv" && export DISCORD_WEBHOOK="your_webhook_url" && /usr/bin/python3 /home/utalmighty/job-seeker/src/script.py
 ```
 
 **Note:** Use full paths and set environment variables within the cron command.

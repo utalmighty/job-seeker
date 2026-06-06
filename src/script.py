@@ -3,7 +3,7 @@ import csv
 import os
 
 SEARCH_TEXT = os.getenv("SEARCH_TEXT", "")
-CSV_PATH = os.getenv("CSV_PATH", "./sample.csv")
+CSV_PATH = os.getenv("CSV_PATH", "./resources/sample.csv")
 DISCORD_WEBHOOK = os.getenv("DISCORD_WEBHOOK", None)
 
 class Company :
